@@ -7,267 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
-
-@media (max-width: 768px) {
-
-  /* General spacing */
-  section {
-    padding: 75px 20px;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  /* Navigation */
-  nav {
-    padding: 16px 20px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  /* Hero section */
-  .hero {
-    min-height: 100vh;
-    padding: 100px 20px 60px;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    text-align: center;
-  }
-
-  .hero-eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    margin-bottom: 15px;
-  }
-
-  h1.hero-name {
-    font-size: clamp(40px, 13vw, 60px);
-    line-height: 1.05;
-  }
-
-  .hero-role {
-    font-size: 18px;
-    margin-bottom: 18px;
-  }
-
-  .hero-summary {
-    font-size: 14px;
-    line-height: 1.7;
-    margin: 0 auto 28px;
-  }
-
-  .hero-cta {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .btn {
-    padding: 12px 18px;
-    font-size: 13px;
-  }
-
-  /* Hero visual */
-  .hero-visual {
-    height: 220px;
-  }
-
-  .avatar-wrap {
-    width: 140px;
-    height: 140px;
-  }
-
-  .avatar-core {
-    width: 95px;
-    height: 95px;
-    font-size: 29px;
-  }
-
-  /* About section */
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 45px;
-  }
-
-  .about-text p {
-    font-size: 14px;
-    line-height: 1.75;
-  }
-
-  .float-card {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  /* Section headings */
-  h2.section-title {
-    font-size: 30px;
-    margin-bottom: 28px;
-  }
-
-  .eyebrow {
-    font-size: 10px;
-  }
-
-  /* Experience */
-  .timeline {
-    padding-left: 23px;
-  }
-
-  .exp-item {
-    margin-bottom: 40px;
-  }
-
-  .exp-item::before {
-    left: -29px;
-  }
-
-  .exp-head {
-    display: block;
-  }
-
-  .exp-role {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 7px;
-  }
-
-  .exp-date {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .exp-item ul {
-    font-size: 13.5px;
-  }
-
-  /* Skills */
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .skill-group h3 {
-    margin-bottom: 18px;
-  }
-
-  /* Projects */
-  .project-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .project-card {
-    padding: 22px;
-  }
-
-  .project-card h3 {
-    font-size: 17px;
-  }
-
-  .project-card ul {
-    font-size: 13.5px;
-  }
-
-  /* Moving skills section */
-  .marquee-wrap {
-    padding: 40px 0;
-  }
-
-  .marquee-track span {
-    font-size: 18px;
-    padding: 0 25px;
-  }
-
-  /* Certifications and education */
-  .split-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .cert-list li {
-    display: block;
-    padding: 15px 0;
-  }
-
-  .cert-name {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .cert-org {
-    display: block;
-  }
-
-  /* Contact section */
-  .contact-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .contact-section p {
-    font-size: 14px;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .contact-links .btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* Footer */
-  footer {
-    padding: 25px 20px;
-    font-size: 11px;
-  }
-}
-
-
-/* Extra-small mobile devices */
-@media (max-width: 400px) {
-
-  h1.hero-name {
-    font-size: 38px;
-  }
-
-  .hero-cta {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-cta .btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  h2.section-title {
-    font-size: 27px;
-  }
-
-  .project-card {
-    padding: 18px;
-  }
-
-  .float-card {
-    padding: 20px;
-  }
-}
 <style>
   :root{
     --bg:#0a0e1a;
@@ -614,6 +353,143 @@
     text-align:center;padding:34px 8vw;border-top:1px solid var(--border);
     font-family:var(--font-mono);font-size:12px;color:var(--text-muted);
   }
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* General spacing */
+  section {
+    padding: 75px 20px;
+  }
+
+  /* Navigation */
+  nav {
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding: 110px 20px 65px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  h1.hero-name {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+
+  .hero-role {
+    font-size: 18px;
+  }
+
+  .hero-summary {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  /* Hero avatar */
+  .hero-visual {
+    height: 230px;
+  }
+
+  .avatar-wrap {
+    width: 145px;
+    height: 145px;
+  }
+
+  .avatar-core {
+    width: 95px;
+    height: 95px;
+    font-size: 29px;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  /* Experience */
+  .exp-head {
+    display: block;
+  }
+
+  .exp-date {
+    display: block;
+    margin-top: 7px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  /* Certifications and education */
+  .split-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  /* Contact buttons */
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 400px) {
+
+  h1.hero-name {
+    font-size: 38px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
 </head>
 <body>
