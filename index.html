@@ -200,12 +200,21 @@
   }
   .avatar-core{
     width:120px;height:120px;border-radius:50%;
+    overflow:hidden;
     background:linear-gradient(145deg,var(--surface-2),var(--surface));
     border:1px solid var(--border-strong);
     display:flex;align-items:center;justify-content:center;
     font-family:var(--font-display);font-weight:700;font-size:36px;color:var(--cyan);
     box-shadow:0 0 40px rgba(53,201,225,.18);
     z-index:2;
+  }
+  .avatar-core img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    border-radius:50%;
+    display:block;
   }
 
   /* ---------- Scroll reveal ---------- */
@@ -535,7 +544,9 @@
           <div class="ripple"></div>
           <div class="ripple"></div>
           <div class="ripple"></div>
-          <div class="avatar-core">PG</div>
+          <div class="avatar-core">
+            <img src="profile.jpeg" alt="Pallavi Gollu">
+          </div>
         </div>
       </div>
     </div>
