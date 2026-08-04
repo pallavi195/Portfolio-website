@@ -564,6 +564,14 @@
     border-radius: 20px;
   }
 }
+/* Remove decorative lines from all section side headings */
+.section-label::before,
+.section-label::after,
+.eyebrow::before,
+.eyebrow::after {
+  display: none;
+  content: none;
+}
 </style>
 </head>
 <body>
@@ -621,7 +629,6 @@
         <div class="about-text">
           <p>I'm a <strong>Business Analyst</strong> currently at <strong>Haloparent</strong>, where I dig into Google Analytics data: traffic, engagement, referral performance and turn it into KPI reports that people actually use.</p>
           <p>Before that, as a <strong>System Engineer Trainee at Infosys</strong>, I optimized SQL queries, automated workflows with Power Automate, and worked inside a five-person Agile team shipping enterprise features.</p>
-          <p>I'm finishing a <strong>B.Tech in Computer Science &amp; Engineering (Data Science)</strong> and I care most about the moment a dashboard stops being a wall of numbers and starts being an answer.</p>
         </div>
       </div>
       <div class="reveal reveal-right float-stage">
