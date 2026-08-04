@@ -499,6 +499,71 @@
     justify-content: center;
   }
 }
+/* =========================================
+   CLEAN LARGE PROFILE IMAGE
+========================================= */
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 500px;
+}
+
+/* Large professional image container */
+.profile-frame {
+  width: min(380px, 34vw);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 24px;
+
+  border: 1px solid var(--border-strong);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.45),
+    0 0 35px rgba(53, 201, 225, 0.12);
+
+  position: relative;
+}
+
+/* Image fills the entire frame */
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center top;
+
+  transition: transform 0.4s ease;
+}
+
+/* Small professional hover effect */
+.profile-frame:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   MOBILE PROFILE IMAGE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-visual {
+    min-height: auto;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .profile-frame {
+    width: min(300px, 82vw);
+    aspect-ratio: 4 / 5;
+    border-radius: 20px;
+  }
+}
 </style>
 </head>
 <body>
@@ -540,13 +605,8 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="avatar-wrap">
-          <div class="ripple"></div>
-          <div class="ripple"></div>
-          <div class="ripple"></div>
-          <div class="avatar-core">
-            <img src="profile.jpeg" alt="Pallavi Gollu">
-          </div>
+        <div class="profile-frame">
+          <img src="profile.jpeg" alt="Pallavi Gollu">
         </div>
       </div>
     </div>
